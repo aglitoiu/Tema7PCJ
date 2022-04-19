@@ -17,7 +17,7 @@ public class ConfigClientApplication {
 	@RestController
 	class MessageRestController {
 
-		@Value("${name:notloaded}")
+		@Value("${var1:notloaded}")
 		private String name;
 
 		@RequestMapping("/message")
