@@ -17,12 +17,12 @@ public class ConfigClientApplication {
 	@RestController
 	class MessageRestController {
 
-		@Value("${var1:notloaded}")
-		private String name;
+		@Value("${email:Default}")
+		private String email;
 
-		@RequestMapping("/message")
+		@RequestMapping("/email")
 		String getMessage() {
-			return this.name;
+			return this.email;
 		}
 	}
 
